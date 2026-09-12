@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Load ../data/raw/*.{json,csv} into ../data/budget.db (SQLite).
 
-Schema is documented in README (data/README.md). Idempotent: DELETE + INSERT
+Schema is documented in the repo README (row counts + sources). Idempotent: DELETE + INSERT
 per table (the datasets are small enough; the ETL is re-runnable).
 
 Tables:
