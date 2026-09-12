@@ -1,4 +1,4 @@
--- FY-over-FY budget execution for the tracked agencies (036 VA, 020 HHS, 012 DoD).
+-- FY-over-FY budget execution for the tracked agencies (036 VA, 020 US Treasury, 012 USDA).
 SELECT code, fiscal_year,
        ROUND(agency_budgetary_resources/1e9, 1) AS ba_bn,
        ROUND(agency_total_obligated/1e9, 1)     AS obligated_bn,

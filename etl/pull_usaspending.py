@@ -24,7 +24,9 @@ RAW = Path(__file__).resolve().parent.parent / "data" / "raw"
 LOG = Path(__file__).resolve().parent.parent / "data" / "pull_log.md"
 
 # Agencies to pull deep execution data for: 036 = VA (the home agency),
-# 020 = HHS, 012 = DoD (biggest outlays) — public data, agency level only.
+# 020 = US Treasury, 012 = USDA — per USAspending's top-tier agency codes.
+# (An earlier draft comment mislabeled these as HHS/DoD; the real HHS/DoD
+# codes are 075/097 and were never pulled into the per-period tables.)
 AGENCY_CODES = ["036", "020", "012"]
 FISCAL_YEARS = ["2023", "2024", "2025"]
 
